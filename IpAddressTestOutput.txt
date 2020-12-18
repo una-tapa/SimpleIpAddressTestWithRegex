@@ -1,0 +1,40 @@
+
+SSO Domain is available when the incoming host is NOT IP Address
+This program checks if the input is IP address format  - v4 (69.89.31.226) nor v6 (2001:0db8:85a3:0000:0000:8a2e:0370:7334)
+
+=== Test 0 : 8.8.8.8
+Is 8.8.8.8 in IpV4Format? ->true
+Is 8.8.8.8 in IpV6Format? ->false
+No SSO Domain available for 8.8.8.8
+
+
+=== Test 1 : 69.89.31.226
+Is 69.89.31.226 in IpV4Format? ->true
+Is 69.89.31.226 in IpV6Format? ->false
+No SSO Domain available for 69.89.31.226
+
+
+=== Test 2 : 12a.111.222.123
+Is 12a.111.222.123 in IpV4Format? ->false
+Is 12a.111.222.123 in IpV6Format? ->false
+Domain name available for 12a.111.222.123
+
+
+=== Test 3 : 999.999.999.999
+Is 999.999.999.999 in IpV4Format? ->true
+Is 999.999.999.999 in IpV6Format? ->false
+No SSO Domain available for 999.999.999.999
+
+
+=== Test 4 : 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+Is 2001:0db8:85a3:0000:0000:8a2e:0370:7334 in IpV4Format? ->false
+Is 2001:0db8:85a3:0000:0000:8a2e:0370:7334 in IpV6Format? ->true
+No SSO Domain available for 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+
+=== Test 5 : w3.ibm.com
+Is w3.ibm.com in IpV4Format? ->false
+Is w3.ibm.com in IpV6Format? ->false
+Domain name available for w3.ibm.com
+
+
