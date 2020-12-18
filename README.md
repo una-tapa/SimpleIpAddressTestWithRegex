@@ -17,3 +17,8 @@ javac IpAddressTest.java
 java IpAddressTest
 ```
 ## Output 
+
+Test output
+https://github.com/una-tapa/SimpleIpAddressTestWithRegex/blob/main/IpAddressTestOutput.txt
+
+In this test, test string 2 & 3 are not likely to come in as a part of Http Request. 
